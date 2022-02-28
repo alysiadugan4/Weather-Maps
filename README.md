@@ -45,7 +45,7 @@ Now let's use this weather data to plan future vacations.
 
 This project was all about use APIs to access useful information and apply various analytical techniques to gain insight into weather conditions around the world. 
 
-I began by creating lists for the coordinates and cities, then created a set of random latitudes and longitudes. Using the citypy library, I linked these random coordinates to the closest city. Once that was set, it was time to link in the weather API. I used a for loop to perform an API call for each of the randomly selected cities in my list, with an exception for any fields that  were missing data.
+I began by creating lists for the coordinates and cities, then created a set of random latitudes and longitudes. Using the citypy library, I linked these random coordinates to the closest city. This produced a list of 606 cities. Once that was set, it was time to link in the weather API. I used a for loop to perform an API call for each of the randomly selected cities in my list, with an exception for any fields that  were missing data.
 
 The raw data was converted into a data frame and the rows missing data were removed. I exported this cleaned up data to a CSV and was ready to perform my analysis. I started by checking for any cities that reported having a humidity greater than 100%, as those would be inaccurate and skew my results. Luckily, this search returned zero results. 
 
